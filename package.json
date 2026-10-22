@@ -1,0 +1,39 @@
+{
+  "name": "@aneron/backoff-plan",
+  "version": "0.1.0",
+  "description": "Plan capped exponential backoff delays and give-up decisions as a pure function.",
+  "license": "MIT",
+  "author": "Vadim Gubin",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "backoff",
+    "retry",
+    "jitter",
+    "exponential-backoff"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
